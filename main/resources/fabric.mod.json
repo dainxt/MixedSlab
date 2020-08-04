@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "mixedslab",
+  "version": "${version}",
+
+  "name": "Mixed Slab",
+  "description": "Just Another Slab Mod, Original Mod: DoubleSlabs",
+  "authors": [
+    "dainxt"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/mixedslab/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.dainxt.mixedslab.MixedSlab"
+    ],
+    "client": [
+      "com.dainxt.mixedslab.ClientMod"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
